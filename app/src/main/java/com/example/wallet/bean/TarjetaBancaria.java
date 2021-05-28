@@ -2,16 +2,16 @@ package com.example.wallet.bean;
 
 public class TarjetaBancaria extends Tarjeta{
 
-    private String bancoEmisor;
+    private BancoEmisor bancoEmisor;
     private Cliente cliente;
 
-    public TarjetaBancaria(int nIdentificador, String bancoEmisor, Cliente cliente) {
-        super(nIdentificador);
+    public TarjetaBancaria(int nIdentificador, String numTarjeta, BancoEmisor bancoEmisor, Cliente cliente) {
+        super(nIdentificador, numTarjeta);
         this.bancoEmisor = bancoEmisor;
         this.cliente = cliente;
     }
 
-    public TarjetaBancaria(String bancoEmisor, Cliente cliente) {
+    public TarjetaBancaria(BancoEmisor bancoEmisor, Cliente cliente) {
         this.bancoEmisor = bancoEmisor;
         this.cliente = cliente;
     }
@@ -24,11 +24,11 @@ public class TarjetaBancaria extends Tarjeta{
                 '}';
     }
 
-    public String getBancoEmisor() {
+    public BancoEmisor getBancoEmisor() {
         return bancoEmisor;
     }
 
-    public void setBancoEmisor(String bancoEmisor) {
+    public void setBancoEmisor(BancoEmisor bancoEmisor) {
         this.bancoEmisor = bancoEmisor;
     }
 

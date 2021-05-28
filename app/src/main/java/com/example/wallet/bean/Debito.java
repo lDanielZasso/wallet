@@ -5,12 +5,12 @@ public class Debito extends TarjetaBancaria{
     private double saldo;
 
 
-    public Debito(int nIdentificador, String bancoEmisor, Cliente cliente, double saldo) {
-        super(nIdentificador, bancoEmisor, cliente);
+    public Debito(int nIdentificador, String numTarjeta, BancoEmisor bancoEmisor, Cliente cliente, double saldo) {
+        super(nIdentificador, numTarjeta, bancoEmisor, cliente);
         this.saldo = saldo;
     }
 
-    public Debito(String bancoEmisor, Cliente cliente, double saldo) {
+    public Debito(BancoEmisor bancoEmisor, Cliente cliente, double saldo) {
         super(bancoEmisor, cliente);
         this.saldo = saldo;
     }
