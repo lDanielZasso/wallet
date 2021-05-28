@@ -2,9 +2,11 @@ package com.example.wallet.bean;
 
 public class Tarjeta {
     private int nIdentificador;
+    private String numTarjeta;
 
-    public Tarjeta(int nIdentificador) {
+    public Tarjeta(int nIdentificador,String numTarjeta) {
         this.nIdentificador = nIdentificador;
+        this.numTarjeta = numTarjeta;
     }
 
     public Tarjeta() {
@@ -17,7 +19,15 @@ public class Tarjeta {
                 '}';
     }
 
-    public int getnIdentificador() {
+    public String getNumTarjeta() {
+        return numTarjeta;
+    }
+
+    public void setNumTarjeta(String numTarjeta) {
+        this.numTarjeta = numTarjeta;
+    }
+
+    public long getnIdentificador() {
         return nIdentificador;
     }
 

@@ -5,14 +5,15 @@ public class Credito extends TarjetaBancaria{
     private double cupoNacional;
     private double gastoNacional;
 
-    public Credito(int nIdentificador, String bancoEmisor, Cliente cliente, NombreTarjeta nt, double cupoNacional, double gastoNacional) {
-        super(nIdentificador, bancoEmisor, cliente);
+
+    public Credito(int nIdentificador, String numTarjeta, BancoEmisor bancoEmisor, Cliente cliente, NombreTarjeta nt, double cupoNacional, double gastoNacional) {
+        super(nIdentificador, numTarjeta, bancoEmisor, cliente);
         this.nt = nt;
         this.cupoNacional = cupoNacional;
         this.gastoNacional = gastoNacional;
     }
 
-    public Credito(String bancoEmisor, Cliente cliente, NombreTarjeta nt, double cupoNacional, double gastoNacional) {
+    public Credito(BancoEmisor bancoEmisor, Cliente cliente, NombreTarjeta nt, double cupoNacional, double gastoNacional) {
         super(bancoEmisor, cliente);
         this.nt = nt;
         this.cupoNacional = cupoNacional;
